@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Make sure padding and margin don't affect layout */
+}
+
+body {
+    background-color: #EDE8DC;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0; /* Ensure there's no body margin */
+}
+
+.game {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 1200px; /* Prevents the game container from getting too wide on large screens */
+    width: 100%; /* Ensures responsiveness */
+}
+
+.container {
+    text-align: center;
+    padding: 0 2rem; /* Added padding to avoid edge content on small screens */
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10vw; /* Use viewport width for better scaling */
+    margin-bottom: 10rem;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 6vw; /* Use viewport width for scaling */
+    margin-bottom: 8rem;
+}
+
+.head {
+    background-color: #E7CCCC;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 5vw; /* Use viewport width for responsive font size */
+}
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+    flex-wrap: wrap; /* Ensures choices wrap on smaller screens */
+}
+
+.chose {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    background-color: #E7CCCC;
+}
+
+.foot {
+    font-size: 10px;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.finalScore .ron {
+    text-align: left;
+    padding: 0;
+    margin-top: 10rem;
+}
+
+.finalScore h2 {
+    margin-top: 10rem;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .game {
+        margin: 0 1rem;  /* Adjust margin to prevent clipping */
+    }
+
+    h1 {
+        font-size: 6vw;
+        margin-bottom: 4rem;
+    }
+
+    h2 {
+        font-size: 5vw;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .choices {
+        flex-direction: column;  
+        margin-bottom: 5rem;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+    }
+
+    .finalScore .ron {
+        margin-top: 5rem;
+    }
+
+    .finalScore h2 {
+        margin-top: 5rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .game {
+        margin: 0 3rem; 
+    }
+
+    h1 {
+        font-size: 8vw;
+        margin-bottom: 6rem;
+    }
+
+    h2 {
+        font-size: 5.5vw;
+        margin-bottom: 5rem;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .choices {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 8rem;
+    }
+
+    footer p {
+        font-size: 1.8rem;
+    }
+
+    .finalScore .ron {
+        margin-top: 7rem;
+    }
+
+    .finalScore h2 {
+        margin-top: 7rem;
+    }
+
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .game {
+        margin: 0 5rem;
+    }
+
+    h1 {
+        font-size: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+        margin-bottom: 5rem;
+    }
+
+    p {
+        font-size: 3.5rem;
+    }
+
+    .choices {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 8rem;
+    }
+
+    footer p {
+        font-size: 2rem;
+    }
+
+    .finalScore .ron {
+        margin-top: 7rem;
+    }
+
+    .finalScore h2 {
+        margin-top: 7rem;
+    }
+
+    .container {
+        padding: 0 3rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .game {
+        margin: 0 15rem;
+    }
+
+    h1 {
+        font-size: 6rem;
+        margin-bottom: 12rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+        margin-bottom: 10rem;
+    }
+
+    p {
+        font-size: 4rem;
+    }
+
+    .choices {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 12rem;
+    }
+
+    footer p {
+        font-size: 2.5rem;
+    }
+
+    .finalScore .ron {
+        margin-top: 12rem;
+    }
+
+    .finalScore h2 {
+        margin-top: 12rem;
+    }
+
+    .container {
+        padding: 0 5rem;
+    }
+}

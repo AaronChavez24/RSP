@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container head">
+        <div class="header">
+            <h1>ROCK PAPER SCISSOR!</h1>
+            <h2>Best Of Three</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="rsp">
+                <h2>Choose One!</h2>
+                <div class="choices">
+                    <p>Rock: <span id="rock" style="font-size: 80px; cursor: pointer;">✊</span></p>
+                    <p>Paper: <span id="paper" style="font-size: 80px; cursor: pointer;">✋</span></p>
+                    <p>Scissor: <span id="scissor" style="font-size: 80px; cursor: pointer;">✌️</span></p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="container chose ron">
+            <div class="game">
+                <div class="rsp">
+                    <div class="chose">
+                        <p>You: <span id="user-choice"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="game">
+                <div class="rsp">
+                    <div class="chose">
+                        <p>Computer: <span id="computer-choice"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <p  id="display-winner"> WINNER!</p>
+            </div>
+        </section>
+
+      
+
+    <footer class="container foot">
+        <p>&copy; ron.dev 2025</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
